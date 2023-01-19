@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        nav {
+            margin-bottom: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .column2 {
+            background-color: yellow;
+            text-align: center;
+        }
+
+        th:nth-child(2), td:nth-child(2) {
+            text-align: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="list.html">List</a>
+        <a href="table.html">Table</a>
+        <a href="frame.html">Frame</a>
+        <a href="form.html">Form</a>
+    </nav>
+    <table>
+        <colgroup>
+            <col>
+            <col class="column2">
+            <col>
+        </colgroup>
+        <caption>Sports</caption>
+        <thead>
+            <tr>
+                <th>Sport</th>
+                <th>Absolutely Objective Description</th>
+                <th>Ballshape</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Soccer</td>
+                <td>Super Sweet</td>
+                <td rowspan="2">Round</td>
+            </tr>
+            <tr>
+                <td>Baseball</td>
+                <td>Quite Large</td>
+                
+            </tr>
+            <tr>
+                <td>Football</td>
+                <td>Just Average</td>
+                <td>Oval</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">There are many different types of sports</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
